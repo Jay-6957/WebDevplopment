@@ -1,0 +1,35 @@
+{% extends "web/base.html" %}
+{% block title %}Register{% endblock title %}
+{% load crispy_forms_tags %}
+{% block body %}
+<!-- 	<style>
+			body {
+				background-image: url('/static/aven.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+	</style> -->
+	<div class="border-top pt-3">
+			<small class="text-muted">
+				Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+			</small>
+	</div>
+	<div class="">
+		<form method="POST">
+			{% csrf_token %}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">Register Today</legend>				
+				{{form|crispy}}
+			</fieldset>
+			<div class='form-group pb-50'>
+				<button class="btn btn-outline-info" type='submit'>Sign Up</button>
+			</div>
+		</form>
+		<!-- <div class="progress">
+			<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="
+			0" aria-valuemax="100"></div>
+		</div> -->
+		
+	</div>
+{% endblock body %}

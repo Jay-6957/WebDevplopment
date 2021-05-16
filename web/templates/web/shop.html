@@ -1,0 +1,140 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block title %}Shop{% endblock title %}
+{% block body %}
+<!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/avenger1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Avengers T-shirt: Movie Stars - Avengers T-shirt</p>
+    <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/thor.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Thor Hammer</p>
+    <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+  </div>
+</div> -->
+<style>
+	body {
+		background-image: url('/static/aven.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+</style>
+
+<div class="container my-3">
+<h1 class="my-4 text-center" style="color: white;">Avengers… Assemble!</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+        <img src="/static/glow1.jpg" class="d-block w-100" alt="...">
+            
+            <div class="card-body">
+              <h5 class="card-title">IRON MAN MASK (GLOW IN THE DARK) - MARVEL OFFICIAL T-SHIRT</h5>
+              <p class="card-text">The artwork will be screen printed to perfection on our premium, regular fit 100% Cotton Redwolf branded tees that you know and love..</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹499.00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="col-md-4">
+        	<div class="card mb-4 shadow-sm">
+            <img src="/static/spiderman.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SPIDER-MAN LOGO - MARVEL OFFICIAL HOODIE</h5>
+              <p class="card-text">The artwork will be screen printed to perfection on our 100% brushed cotton Redwolf branded hoodie featuring drawstrings and a hood.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹1599.00</h4>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="/static/ironman.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">IRON MAN: INTERFACE - MARVEL OFFICIAL T-SHIRT</h5>
+              <p class="card-text">The artwork will be screen printed to perfection on our premium, regular fit 100% Cotton Redwolf branded tees that you know and love.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹599.00</h4>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="card mb-4 shadow-sm">
+            <img src="/static/startkind.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">STARK INDUSTRIES - MARVEL OFFICIAL JACKET</h5>
+              <p class="card-text">The artwork will be screen printed to perfection on our 100% brushed cotton Redwolf branded jacket.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹900.00</h4>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="col-md-4">
+        	<div class="card mb-4 shadow-sm">
+            <img src="/static/civilbag.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CIVIL WAR SHIELD - MARVEL OFFICIAL BACKPACK</h5>
+              <p class="card-text">An original concept by Hern - our awesome backpacks come with swappable Skins. Choose from loads of digitally printed designs that can be attached to the same base bag and change your design daily!.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹699.00</h4>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="card mb-4 shadow-sm">
+            <img src="/static/shield.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CAPTAIN AMERICA: SHIELD - MARVEL OFFICIAL COASTER</h5>
+              <p class="card-text">The artwork will be digitally printed on a 3.5x3.5 inch (9x9 cm) coaster.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'buy' %}" class="btn btn-primary">Buy This</a>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <h4>₹399.00</h4>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+{% endblock body %}
+
